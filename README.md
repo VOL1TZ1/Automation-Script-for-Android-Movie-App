@@ -28,6 +28,8 @@ Before running the project, ensure you have the following installed:
 - **intelJ IDE**
 - **Android SDK** with an emulator or a connected Android device
 - **Appium Server** (installed via npm, check this [link](https://www.testbytes.net/blog/how-to-install-appium-server-and-node-on-windows-through-command-line/)).
+-   appium driver:  uiautomator2 "3.7.6"
+-   appium plugins:  element-wait "3.0.2"
 - **Appium Inspector** (for UI element inspection)
 
 ## Running Tests
