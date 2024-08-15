@@ -25,7 +25,7 @@ public class AppJetflix {
         service = new AppiumServiceBuilder().usingPort(4723).withIPAddress("0.0.0.0").build();
         service.start();
 
-        URI uri = URI.create("http://localhost:4723");
+        URI uri = URI.create("http://0.0.0.0:4723");
         URL url = uri.toURL();
 
         UiAutomator2Options options = new UiAutomator2Options();
