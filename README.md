@@ -32,5 +32,6 @@ Before running the project, ensure you have the following installed:
 ## Running Tests
 
 1. **Clone the repository**
-2. **Open the project in intelJ**
-3. **Run the testcases from "AppJetflix.java"**
+2. **Open the project in IntelliJ**
+3. **Open the "Pom.xml" and update the maven dependencies** 
+4. **Run the test cases from "AppJetflix.java"**
