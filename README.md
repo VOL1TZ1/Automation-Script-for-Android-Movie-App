@@ -7,6 +7,7 @@ This repository contains an Appium-based automation project for testing an Andro
 - [Project Overview](#project-overview)
 - [Tools Used](#tools-used)
 - [Running Tests](#running-tests)
+- [Report](#report)
 
 
 
@@ -35,3 +36,6 @@ Before running the project, ensure you have the following installed:
 2. **Open the project in IntelliJ**
 3. **Open the "Pom.xml" and update the maven dependencies** 
 4. **Run the test cases from "AppJetflix.java"**
+
+## Report
+![image](https://github.com/user-attachments/assets/3ebb43aa-e717-43b8-8ddf-93881c9a36c3)
