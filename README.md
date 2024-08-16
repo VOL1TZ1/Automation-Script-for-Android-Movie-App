@@ -40,4 +40,4 @@ Before running the project, ensure you have the following installed:
 4. **Run the test cases from "AppJetflix.java"**
 
 ## Report
-![image](https://github.com/user-attachments/assets/3ebb43aa-e717-43b8-8ddf-93881c9a36c3)
+
