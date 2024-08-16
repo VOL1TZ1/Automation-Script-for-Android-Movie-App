@@ -40,4 +40,6 @@ Before running the project, ensure you have the following installed:
 4. **Run the test cases from "AppJetflix.java"**
 
 ## Report
-
+![Report.png](Demo%2FReport.png)
+![Report MovieTitle.png](Demo%2FReport%20MovieTitle.png)
+![Report ReleaseDate.png](Demo%2FReport%20ReleaseDate.png)
