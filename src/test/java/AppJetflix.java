@@ -7,7 +7,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -39,7 +41,7 @@ public class AppJetflix {
     }
 
     @Test
-    public void scenarioMovieTitle(){
+    public void scenarioMovieTitle() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 
         WebElement movieElement = wait.until(ExpectedConditions.elementToBeClickable(Locators.movieTitleMainPage));
@@ -50,7 +52,7 @@ public class AppJetflix {
         String movieNameDetailsScreen = movieNameDetailsElement.getText();
 
         Assert.assertEquals(movieNameHomeScreen, movieNameDetailsScreen, "Movie name does not match!");
-        WebElement backButton =driver.findElement(Locators.backButtonMoviePage);
+        WebElement backButton = driver.findElement(Locators.backButtonMoviePage);
         backButton.click();
 
     }
@@ -69,13 +71,13 @@ public class AppJetflix {
         WebElement exitFilter = driver.findElement(Locators.exitMenuFilterButton);
         exitFilter.click();
 
-        WebElement releaseDate =driver.findElement(Locators.firstMovieReleaseDate);
-        LocalDate movieReleaseDate =LocalDate.parse(releaseDate.getText());
+        WebElement releaseDate = driver.findElement(Locators.firstMovieReleaseDate);
+        LocalDate movieReleaseDate = LocalDate.parse(releaseDate.getText());
 
-        Assert.assertTrue(currentDate.isBefore(movieReleaseDate),"Movie already released!");
+        Assert.assertTrue(currentDate.isBefore(movieReleaseDate), "Movie already released!");
 
         menuFilter.click();
-        WebElement resetButton=driver.findElement(Locators.resetFiltersButton);
+        WebElement resetButton = driver.findElement(Locators.resetFiltersButton);
         resetButton.click();
         exitFilter.click();
 
@@ -84,9 +86,7 @@ public class AppJetflix {
 
     @AfterTest
     public void Finish() {
-        if (driver != null) {
-            driver.quit();
-        }
+        driver.quit();
         service.stop();
     }
 }
