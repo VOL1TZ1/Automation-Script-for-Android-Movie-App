@@ -1,4 +1,4 @@
-# Mobile-Automation Project
+# Testing using Automation Scripts for Android Movie App
 
 This repository contains an Appium-based automation project for testing an Android app. The project uses TestNG for managing test execution and assertions.
 
